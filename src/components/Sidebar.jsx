@@ -5,9 +5,11 @@ import { MdOutlineCancel } from 'react-icons/md';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
 import { links } from '../data/dummy';
+import { useStateContext } from '../contexts/ContextProvider';
 
 const Sidebar = () => {
-  const activeMenu = true;
+  
+  const { activeMenu, setActiveMenu } =  useStateContext();
 
   const activeLink = 'flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg  text-white  text-md m-2';
   const normalLink = 'flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-md text-gray-700 dark:text-gray-400 dark:hover:text-black hover:bg-light-gray m-2';
@@ -17,15 +19,14 @@ const Sidebar = () => {
       {activeMenu && (
         <>
           <div className="flex items-center justify-between">
-            <Link to="/"  className="flex items-center gap-3 mt-4 ml-3 text-xl font-extrabold tracking-tight text-slate-900 ">
+            <Link to="/" onClick={() => setActiveMenu(false)} className="flex items-center gap-3 mt-4 ml-3 text-xl font-extrabold tracking-tight text-slate-900 ">
               <SiShopware /> <span>Shoppy</span>
             </Link>
             <TooltipComponent content="Menu" position="BottomCenter">
               <button
                 type="button"
-                onClick={() => {}}
-                style={{ color: "black" }}
-                className="block p-3 mt-4 text-xl rounded-full hover:bg-light-gray md:hidden"
+                onClick={() => setActiveMenu(!activeMenu)}
+                className="block p-3 mt-4 text-xl rounded-full hover:bg-light-gray "
               >
                 <MdOutlineCancel />
               </button>

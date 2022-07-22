@@ -5,8 +5,15 @@ import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
 import { Navbar, Footer, Sidebar, ThemeSettings } from './components';
 import { Ecommerce, Orders, Calendar, Employees, Stacked, Pyramid, Customers, Kanban, Line, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor } from './pages';
+
+import { useStateContext } from './contexts/ContextProvider';
+
 import './App.css';
+
 const App = () => {
+
+  const { activeMenu } =  useStateContext();
+
   const currentMode = true;
   return (
     <div className={currentMode === 'Dark' ? 'dark' : ''}>
@@ -19,7 +26,7 @@ const App = () => {
             >
               <button
                 type="button"
-                
+                onClick={{}}
                 style={{ background: "blue", borderRadius: '50%' }}
                 className="p-3 text-3xl text-white hover:drop-shadow-xl hover:bg-light-gray"
               >
@@ -28,7 +35,7 @@ const App = () => {
 
             </TooltipComponent>
           </div>
-          {true ? (
+          {activeMenu ? (
             <div className="fixed bg-white w-72 sidebar dark:bg-secondary-dark-bg ">
               <Sidebar />
             </div>
@@ -39,7 +46,7 @@ const App = () => {
           )}
           <div
             className={
-              true
+              activeMenu
                 ? 'dark:bg-main-dark-bg  bg-main-bg min-h-screen md:ml-72 w-full  '
                 : 'bg-main-bg dark:bg-main-dark-bg  w-full min-h-screen flex-2 '
             }
