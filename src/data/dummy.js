@@ -26,7 +26,7 @@ import product8 from './product8.jpg';
 export const gridOrderImage = (props) => (
   <div>
     <img
-      className="rounded-xl h-20 md:ml-3"
+      className="h-20 rounded-xl md:ml-3"
       src={props.ProductImage}
       alt="order-item"
     />
@@ -37,7 +37,7 @@ export const gridOrderStatus = (props) => (
   <button
     type="button"
     style={{ background: props.StatusBg }}
-    className="text-white py-1 px-2 capitalize rounded-2xl text-md"
+    className="px-2 py-1 text-white capitalize rounded-2xl text-md"
   >
     {props.Status}
   </button>
@@ -64,7 +64,7 @@ export const kanbanGrid = [
 const gridEmployeeProfile = (props) => (
   <div className="flex items-center gap-2">
     <img
-      className="rounded-full w-10 h-10"
+      className="w-10 h-10 rounded-full"
       src={props.EmployeeImage}
       alt="employee"
     />
@@ -121,9 +121,9 @@ export const EditorData = () => (
   </div>
 );
 const customerGridImage = (props) => (
-  <div className="image flex gap-4">
+  <div className="flex gap-4 image">
     <img
-      className="rounded-full w-10 h-10"
+      className="w-10 h-10 rounded-full"
       src={props.CustomerImage}
       alt="employee"
     />
@@ -135,8 +135,8 @@ const customerGridImage = (props) => (
 );
 
 const customerGridStatus = (props) => (
-  <div className="flex gap-2 justify-center items-center text-gray-700 capitalize">
-    <p style={{ background: props.StatusBg }} className="rounded-full h-3 w-3" />
+  <div className="flex items-center justify-center gap-2 text-gray-700 capitalize">
+    <p style={{ background: props.StatusBg }} className="w-3 h-3 rounded-full" />
     <p>{props.Status}</p>
   </div>
 );
@@ -1484,30 +1484,30 @@ export const customersData = [
 export const employeesData = [
   {
     EmployeeID: 1,
-    Name: 'Nancy Davolio',
+    Name: 'May',
     Title: 'Sales Representative',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
     avatar3,
   },
   {
     EmployeeID: 2,
-    Name: 'Nasimiyu Danai',
+    Name: 'Kaung',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar3,
   },
   {
     EmployeeID: 3,
-    Name: 'Iulia Albu',
+    Name: 'Sai Zayyar',
     Title: 'HR',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar4,
@@ -1517,7 +1517,7 @@ export const employeesData = [
     Name: 'Siegbert Gottfried',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar2,
@@ -1527,7 +1527,7 @@ export const employeesData = [
     Name: 'Omar Darobe',
     Title: 'HR',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -1537,7 +1537,7 @@ export const employeesData = [
     Name: 'Penjani Inyene',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -1554,10 +1554,10 @@ export const employeesData = [
   },
   {
     EmployeeID: 1,
-    Name: 'Nancy Davolio',
+    Name: 'May',
     Title: 'Sales Representative',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
     avatar2,
@@ -1565,20 +1565,20 @@ export const employeesData = [
   },
   {
     EmployeeID: 2,
-    Name: 'Nasimiyu Danai',
+    Name: 'Kaung',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar3,
   },
   {
     EmployeeID: 3,
-    Name: 'Iulia Albu',
+    Name: 'Sai Zayyar',
     Title: 'HR',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar4,
@@ -1588,7 +1588,7 @@ export const employeesData = [
     Name: 'Siegbert Gottfried',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar2,
@@ -1598,7 +1598,7 @@ export const employeesData = [
     Name: 'Omar Darobe',
     Title: 'HR',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -1608,7 +1608,7 @@ export const employeesData = [
     Name: 'Penjani Inyene',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -1625,30 +1625,30 @@ export const employeesData = [
   },
   {
     EmployeeID: 1,
-    Name: 'Nancy Davolio',
+    Name: 'May',
     Title: 'Sales Representative',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
     avatar,
   },
   {
     EmployeeID: 2,
-    Name: 'Nasimiyu Danai',
+    Name: 'Kaung',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar3,
   },
   {
     EmployeeID: 3,
-    Name: 'Iulia Albu',
+    Name: 'Sai Zayyar',
     Title: 'HR',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar4,
@@ -1658,7 +1658,7 @@ export const employeesData = [
     Name: 'Siegbert Gottfried',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar2,
@@ -1668,7 +1668,7 @@ export const employeesData = [
     Name: 'Omar Darobe',
     Title: 'HR',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -1678,7 +1678,7 @@ export const employeesData = [
     Name: 'Penjani Inyene',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -1695,10 +1695,10 @@ export const employeesData = [
   },
   {
     EmployeeID: 1,
-    Name: 'Nancy Davolio',
+    Name: 'May',
     Title: 'Sales Representative',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
     avatar2,
@@ -1706,20 +1706,20 @@ export const employeesData = [
   },
   {
     EmployeeID: 2,
-    Name: 'Nasimiyu Danai',
+    Name: 'Kaung',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar3,
   },
   {
     EmployeeID: 3,
-    Name: 'Iulia Albu',
+    Name: 'Sai Zayyar',
     Title: 'HR',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar4,
@@ -1729,7 +1729,7 @@ export const employeesData = [
     Name: 'Siegbert Gottfried',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar2,
@@ -1739,7 +1739,7 @@ export const employeesData = [
     Name: 'Omar Darobe',
     Title: 'HR',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -1749,7 +1749,7 @@ export const employeesData = [
     Name: 'Penjani Inyene',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -1766,10 +1766,10 @@ export const employeesData = [
   },
   {
     EmployeeID: 1,
-    Name: 'Nancy Davolio',
+    Name: 'May',
     Title: 'Sales Representative',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
     avatar2,
@@ -1777,20 +1777,20 @@ export const employeesData = [
   },
   {
     EmployeeID: 2,
-    Name: 'Nasimiyu Danai',
+    Name: 'Kaung',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar3,
   },
   {
     EmployeeID: 3,
-    Name: 'Iulia Albu',
+    Name: 'Sai Zayyar',
     Title: 'HR',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar4,
@@ -1800,7 +1800,7 @@ export const employeesData = [
     Name: 'Siegbert Gottfried',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar2,
@@ -1810,7 +1810,7 @@ export const employeesData = [
     Name: 'Omar Darobe',
     Title: 'HR',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -1820,7 +1820,7 @@ export const employeesData = [
     Name: 'Penjani Inyene',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -1837,10 +1837,10 @@ export const employeesData = [
   },
   {
     EmployeeID: 1,
-    Name: 'Nancy Davolio',
+    Name: 'May',
     Title: 'Sales Representative',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
     avatar2,
@@ -1848,20 +1848,20 @@ export const employeesData = [
   },
   {
     EmployeeID: 2,
-    Name: 'Nasimiyu Danai',
+    Name: 'Kaung',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar3,
   },
   {
     EmployeeID: 3,
-    Name: 'Iulia Albu',
+    Name: 'Sai Zayyar',
     Title: 'HR',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar4,
@@ -1871,7 +1871,7 @@ export const employeesData = [
     Name: 'Siegbert Gottfried',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar2,
@@ -1881,7 +1881,7 @@ export const employeesData = [
     Name: 'Omar Darobe',
     Title: 'HR',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -1891,7 +1891,7 @@ export const employeesData = [
     Name: 'Penjani Inyene',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -1908,10 +1908,10 @@ export const employeesData = [
   },
   {
     EmployeeID: 1,
-    Name: 'Nancy Davolio',
+    Name: 'May',
     Title: 'Sales Representative',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
     avatar2,
@@ -1919,20 +1919,20 @@ export const employeesData = [
   },
   {
     EmployeeID: 2,
-    Name: 'Nasimiyu Danai',
+    Name: 'Kaung',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar3,
   },
   {
     EmployeeID: 3,
-    Name: 'Iulia Albu',
+    Name: 'Sai Zayyar',
     Title: 'HR',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar4,
@@ -1942,7 +1942,7 @@ export const employeesData = [
     Name: 'Siegbert Gottfried',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar2,
@@ -1952,7 +1952,7 @@ export const employeesData = [
     Name: 'Omar Darobe',
     Title: 'HR',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -1962,7 +1962,7 @@ export const employeesData = [
     Name: 'Penjani Inyene',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -1979,10 +1979,10 @@ export const employeesData = [
   },
   {
     EmployeeID: 1,
-    Name: 'Nancy Davolio',
+    Name: 'May',
     Title: 'Sales Representative',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
     avatar2,
@@ -1990,20 +1990,20 @@ export const employeesData = [
   },
   {
     EmployeeID: 2,
-    Name: 'Nasimiyu Danai',
+    Name: 'Kaung',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar3,
   },
   {
     EmployeeID: 3,
-    Name: 'Iulia Albu',
+    Name: 'Sai Zayyar',
     Title: 'HR',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar4,
@@ -2013,7 +2013,7 @@ export const employeesData = [
     Name: 'Siegbert Gottfried',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar2,
@@ -2023,7 +2023,7 @@ export const employeesData = [
     Name: 'Omar Darobe',
     Title: 'HR',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -2033,7 +2033,7 @@ export const employeesData = [
     Name: 'Penjani Inyene',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -2050,10 +2050,10 @@ export const employeesData = [
   },
   {
     EmployeeID: 1,
-    Name: 'Nancy Davolio',
+    Name: 'May',
     Title: 'Sales Representative',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
     avatar2,
@@ -2061,20 +2061,20 @@ export const employeesData = [
   },
   {
     EmployeeID: 2,
-    Name: 'Nasimiyu Danai',
+    Name: 'Kaung',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar3,
   },
   {
     EmployeeID: 3,
-    Name: 'Iulia Albu',
+    Name: 'Sai Zayyar',
     Title: 'HR',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar4,
@@ -2084,7 +2084,7 @@ export const employeesData = [
     Name: 'Siegbert Gottfried',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar2,
@@ -2094,7 +2094,7 @@ export const employeesData = [
     Name: 'Omar Darobe',
     Title: 'HR',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -2104,7 +2104,7 @@ export const employeesData = [
     Name: 'Penjani Inyene',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'MM',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -2128,7 +2128,7 @@ export const ordersData = [
 
     TotalAmount: 32.38,
     OrderItems: 'Fresh Tomato',
-    Location: 'USA',
+    Location: 'MM',
     Status: 'pending',
     StatusBg: '#FB9678',
     ProductImage:
@@ -2183,7 +2183,7 @@ export const ordersData = [
     CustomerName: 'Omar Darobe',
     TotalAmount: 95.99,
     OrderItems: 'Makeup Lancome Rouge',
-    Location: 'USA',
+    Location: 'MM',
     Status: 'canceled',
     StatusBg: '#FF5C8E',
     ProductImage:
@@ -2194,7 +2194,7 @@ export const ordersData = [
     CustomerName: 'Lulia albu',
     TotalAmount: 17.99,
     OrderItems: 'Skincare',
-    Location: 'USA',
+    Location: 'MM',
     Status: 'active',
     StatusBg: '#03C9D7',
     ProductImage:
@@ -2205,7 +2205,7 @@ export const ordersData = [
     CustomerName: 'Penjani',
     TotalAmount: 59.99,
     OrderItems: 'Headphone',
-    Location: 'USA',
+    Location: 'MM',
     Status: 'complete',
     StatusBg: '#8BE78B',
     ProductImage:
@@ -2216,7 +2216,7 @@ export const ordersData = [
     CustomerName: 'Jie Yan',
     TotalAmount: 87.99,
     OrderItems: 'Shoes',
-    Location: 'USA',
+    Location: 'MM',
     Status: 'pending',
     StatusBg: '#FB9678',
     ProductImage:
@@ -2227,7 +2227,7 @@ export const ordersData = [
     CustomerName: 'Danai',
     TotalAmount: 122.99,
     OrderItems: 'Watch',
-    Location: 'USA',
+    Location: 'MM',
     Status: 'canceled',
     StatusBg: '#FF5C8E',
     ProductImage:
@@ -2238,7 +2238,7 @@ export const ordersData = [
     CustomerName: 'Miron',
     TotalAmount: 87.99,
     OrderItems: 'Ice Cream',
-    Location: 'USA',
+    Location: 'MM',
     Status: 'active',
     StatusBg: '#03C9D7',
     ProductImage:
@@ -2260,7 +2260,7 @@ export const ordersData = [
     CustomerName: 'Danai',
     TotalAmount: 122.99,
     OrderItems: 'Watch',
-    Location: 'USA',
+    Location: 'MM',
     Status: 'canceled',
     StatusBg: '#FF5C8E',
     ProductImage:
@@ -2272,7 +2272,7 @@ export const ordersData = [
 
     TotalAmount: 32.38,
     OrderItems: 'Fresh Tomato',
-    Location: 'USA',
+    Location: 'MM',
     Status: 'pending',
     StatusBg: '#FB9678',
     ProductImage:
@@ -2327,7 +2327,7 @@ export const ordersData = [
     CustomerName: 'Omar Darobe',
     TotalAmount: 95.99,
     OrderItems: 'Makeup Lancome Rouge',
-    Location: 'USA',
+    Location: 'MM',
     Status: 'canceled',
     StatusBg: '#FF5C8E',
     ProductImage:
@@ -2338,7 +2338,7 @@ export const ordersData = [
     CustomerName: 'Lulia albu',
     TotalAmount: 17.99,
     OrderItems: 'Skincare',
-    Location: 'USA',
+    Location: 'MM',
     Status: 'active',
     StatusBg: '#03C9D7',
     ProductImage:
@@ -2349,7 +2349,7 @@ export const ordersData = [
     CustomerName: 'Penjani',
     TotalAmount: 59.99,
     OrderItems: 'Headphone',
-    Location: 'USA',
+    Location: 'MM',
     Status: 'complete',
     StatusBg: '#8BE78B',
     ProductImage:
@@ -2360,7 +2360,7 @@ export const ordersData = [
     CustomerName: 'Jie Yan',
     TotalAmount: 87.99,
     OrderItems: 'Shoes',
-    Location: 'USA',
+    Location: 'MM',
     Status: 'pending',
     StatusBg: '#FB9678',
     ProductImage:
@@ -2371,7 +2371,7 @@ export const ordersData = [
     CustomerName: 'Danai',
     TotalAmount: 122.99,
     OrderItems: 'Watch',
-    Location: 'USA',
+    Location: 'MM',
     Status: 'canceled',
     StatusBg: '#FF5C8E',
     ProductImage:
@@ -2382,7 +2382,7 @@ export const ordersData = [
     CustomerName: 'Miron',
     TotalAmount: 87.99,
     OrderItems: 'Ice Cream',
-    Location: 'USA',
+    Location: 'MM',
     Status: 'active',
     StatusBg: '#03C9D7',
     ProductImage:
@@ -2404,7 +2404,7 @@ export const ordersData = [
     CustomerName: 'Danai',
     TotalAmount: 122.99,
     OrderItems: 'Watch',
-    Location: 'USA',
+    Location: 'MM',
     Status: 'canceled',
     StatusBg: '#FF5C8E',
     ProductImage:
@@ -2416,7 +2416,7 @@ export const ordersData = [
 
     TotalAmount: 32.38,
     OrderItems: 'Fresh Tomato',
-    Location: 'USA',
+    Location: 'MM',
     Status: 'pending',
     StatusBg: '#FB9678',
     ProductImage:
@@ -2471,7 +2471,7 @@ export const ordersData = [
     CustomerName: 'Omar Darobe',
     TotalAmount: 95.99,
     OrderItems: 'Makeup Lancome Rouge',
-    Location: 'USA',
+    Location: 'MM',
     Status: 'canceled',
     StatusBg: '#FF5C8E',
     ProductImage:
@@ -2482,7 +2482,7 @@ export const ordersData = [
     CustomerName: 'Lulia albu',
     TotalAmount: 17.99,
     OrderItems: 'Skincare',
-    Location: 'USA',
+    Location: 'MM',
     Status: 'active',
     StatusBg: '#03C9D7',
     ProductImage:
@@ -2493,7 +2493,7 @@ export const ordersData = [
     CustomerName: 'Penjani',
     TotalAmount: 59.99,
     OrderItems: 'Headphone',
-    Location: 'USA',
+    Location: 'MM',
     Status: 'complete',
     StatusBg: '#8BE78B',
     ProductImage:
