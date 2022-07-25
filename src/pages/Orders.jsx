@@ -9,7 +9,7 @@ const Orders = () => {
   const editing = { allowDeleting: true, allowEditing: true };
 
   return (
-    <div className="p-2 m-2 mt-24 bg-white md:m-10 md:p-10 rounded-3xl">
+    <div className="p-2 m-2 mt-24 bg-white dark:bg-secondary-dark-bg md:m-10 md:p-10 rounded-3xl">
       <Header category="Page"  title="Order" />
       <GridComponent
         id="gridcomp"

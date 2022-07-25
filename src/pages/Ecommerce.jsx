@@ -7,6 +7,9 @@ import { earningData, SparklineAreaData, ecomPieChartDat } from '../data/dummy';
 import { useStateContext } from '../contexts/ContextProvider';
 
 const Ecommerce = () => {
+
+  const { currentColor, currentMode } = useStateContext();
+
   return (
     <div className="mt-24">
       <div className="flex flex-wrap justify-center lg:flex-nowrap ">
@@ -18,7 +21,7 @@ const Ecommerce = () => {
             </div>
             <button
               type="button"
-              style={{ backgroundColor: "gray" }}
+              style={{ backgroundColor: currentColor }}
               className="text-2xl opacity-0.9 text-white hover:drop-shadow-xl rounded-full  p-4"
             >
               <BsCurrencyDollar />
@@ -27,7 +30,7 @@ const Ecommerce = () => {
           <div className="mt-6">
             <Button
               color="white"
-              bgColor={"rgba(0,0,0,0.3)"}
+              bgColor={currentColor}
               text="Download"
               borderRadius="10px"
               size="md"
@@ -94,19 +97,19 @@ const Ecommerce = () => {
                     </div>
                     <div className="mt-5">
                       <SparkLine  
-                        currentColor="grey"
+                        currentColor={currentColor}
                         type="Line"
                         id="line-sparkling"
                         height="80px"
                         width="250px"
                         data={SparklineAreaData}
-                        color="grey"
+                        color={currentColor}
                       />
                     </div>
                     <div className="mt-10">
                       <Button
                         color="white"
-                        bgColor="blue"
+                        bgColor={currentColor}
                         text="Download Report"
                         borderRadius="10px" />
                     </div>
