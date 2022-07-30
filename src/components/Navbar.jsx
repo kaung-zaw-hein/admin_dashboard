@@ -29,7 +29,7 @@ const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
 
 const Navbar = () => {
 
-  const { activeMenu, setActiveMenu, handleClick, isClicked,  screenSize, setScreenSize, currentColor } = useStateContext();
+  const { currentColor, activeMenu, setActiveMenu, handleClick, isClicked, setScreenSize, screenSize } = useStateContext();
 
   useEffect(() => {
     const handleResize = () => setScreenSize(window.innerWidth);
@@ -39,20 +39,20 @@ const Navbar = () => {
     handleResize();
 
     return () => window.removeEventListener('resize', handleResize);
-
   }, []);
 
   useEffect(() => {
-    if(screenSize <= 900){
+    if (screenSize <= 900) {
       setActiveMenu(false);
-    }else{
+    } else {
       setActiveMenu(true);
     }
-  }, [screenSize] );
+  }, [screenSize]);
+
 
   return (
     <div className="relative flex justify-between p-2 md:ml-6 md:mr-6">
-      <NavButton title="Menu" customFunc={() => setActiveMenu(!activeMenu)} color={currentColor} icon={<AiOutlineMenu/>} />
+      <NavButton title="Menu" customFunc={() => setActiveMenu(!activeMenu)} color={currentColor} icon={!activeMenu &&( <AiOutlineMenu/> ) } />
     <div className="flex">
       <NavButton title="Cart" customFunc={() => handleClick('cart')} color={currentColor} icon={<FiShoppingCart />} />
       <NavButton title="Chat" dotColor={currentColor} customFunc={() => handleClick('chat')} color={currentColor} icon={<BsChatLeft />} />
@@ -70,7 +70,7 @@ const Navbar = () => {
           <p>
             <span className="text-gray-400 text-14">Hi,</span>{' '}
             <span className="ml-1 font-bold text-gray-400 text-14">
-              Michael
+              Kv0nzee
             </span>
           </p>
           <MdKeyboardArrowDown className="text-gray-400 text-14" />
